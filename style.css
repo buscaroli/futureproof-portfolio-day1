@@ -3,5 +3,56 @@
 }
 
 body {
+  background-color: brown;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
   width: 70vw;
+  margin: 0 auto;
+  background-color: yellow;
+  min-height: 100vh;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 1.5em;
+  padding: 1em;
+  background-color: black;
+  color: white;
+  border-radius: 100%;
+}
+
+.navlist {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navitem {
+  text-decoration: none;
+  padding-right: .5em;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.5em;
+  letter-spacing: 1.3px;;
+}
+
+.about {
+
+}
+
+.portfolio {
+
+}
+
+.portfolio-links {
+  
 }
