@@ -16,8 +16,11 @@ body {
 }
 
 .nav {
+  
   display: flex;
   justify-content: space-between;
+  background-color: pink;
+  
 }
 
 .logo {
@@ -30,7 +33,7 @@ body {
 
 .navlist {
   display: flex;
-  justify-content: space-around;
+  justify-content: end;
   align-items: center;
 }
 
@@ -42,7 +45,20 @@ body {
 
 h3 {
   font-size: 1.5em;
-  letter-spacing: 1.3px;;
+  letter-spacing: 1.3px;
+  padding-left: 1em;
+  
+}
+
+h4 {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+p {
+  font-size: 1.2em;
+  letter-spacing: 1.2px;
+  line-height: 1.3em;
 }
 
 .about {
@@ -50,9 +66,35 @@ h3 {
 }
 
 .portfolio {
-
+  max-width: 100%;
+  display: relative;
+  background-color: cyan;
+  max-width: 100%;
+  display: relative;
+  background-color: cyan;
+  padding: 1em;
 }
 
 .portfolio-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   
+}
+
+.portfolio-img {
+  width: 20vw;
+  height: auto;
+  margin: 0 auto;
+  padding: .5em;
+}
+
+.contacts {
+  height: 10vh;
+  background-color: black;
+  color: white;
+}
+
+.contacts-detail {
+  font-size: .9em;
+  font-weight: bold;
 }
