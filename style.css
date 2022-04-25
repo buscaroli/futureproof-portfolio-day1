@@ -6,22 +6,25 @@ body {
   background-color: brown;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
+.nav {
   width: 70vw;
   margin: 0 auto;
-  background-color: yellow;
-  min-height: 100vh;
-}
-
-.nav {
-  
   display: flex;
   justify-content: space-between;
   background-color: pink;
+
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 70vw;
+  margin: 0 auto;
+  background-color: yellow;
   
 }
+
 
 .logo {
   font-size: 1.5em;
@@ -77,24 +80,26 @@ p {
 
 .portfolio-links {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   
 }
 
 .portfolio-img {
-  width: 20vw;
+  width: 30vw;
   height: auto;
   margin: 0 auto;
   padding: .5em;
 }
 
 .contacts {
+  text-align: center;;
   height: 10vh;
   background-color: black;
   color: white;
 }
 
 .contacts-detail {
+ 
   font-size: .9em;
   font-weight: bold;
 }
