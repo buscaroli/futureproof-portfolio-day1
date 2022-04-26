@@ -1,3 +1,10 @@
+:root {
+  --color-lightgrey: #E1E1E1;
+  --color-beige: #D1CECE;
+  --color-mediumgrey: #C4C4C4;
+  --color-dark: black;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -9,8 +16,7 @@ body {
 
 
 .nav {
-  
-  height: 7vh;
+  height: 70px;
   width: 70vw;
   
   margin: 0 auto;
