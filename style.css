@@ -83,15 +83,20 @@ p {
 .portfolio-links {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  overflow: auto;
   white-space: nowrap;
+  overflow-x: auto;
   background-color: light-green;
   width: 100%;
   
 }
 
+ li {
+  display: inline;
+  width: 200px;
+}
+
 .portfolio-img {
-  display: inline-block;
+  
   width: 30vw;
   height: auto;
   margin: 0 auto;
