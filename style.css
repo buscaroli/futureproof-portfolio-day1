@@ -4,20 +4,7 @@
 
 body {
   background-color: brown;
-  height: 100%;
-}
-
-
-.nav {
-  
-  height: 7vh;
-  width: 70vw;
-  
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  background-color: pink;
-
+  height: 100vh;
 }
 
 .container {
@@ -25,17 +12,14 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 93vh;
+  
   margin: 0 auto;
   background-color: yellow;
- 
-  
 }
 
 
 .logo {
   font-size: 1.5em;
-  padding: 1em;
   background-color: black;
   color: white;
   border-radius: 100%;
@@ -76,9 +60,7 @@ p {
 }
 
 .portfolio {
-  
   background-color: cyan;
-  
 }
 
 .portfolio-links {
@@ -88,7 +70,6 @@ p {
   overflow-x: auto;
   background-color: light-green;
   width: 100%;
-  
 }
 
  li {
@@ -97,23 +78,18 @@ p {
 }
 
 .portfolio-img {
-  
   width: 30vw;
   height: auto;
   margin: 0 auto;
-  padding: .5em;
 }
 
-.contacts {
-  text-align: center;
-  
-  background-color: black;
-  color: white;
-}
 
-.contacts-detail {
- 
-  font-size: .9em;
-  font-weight: bold;
-}
+.nav {
+  height: 80px;
+  width: 100vw;
 
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  background-color: pink;
+}
