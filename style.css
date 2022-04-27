@@ -2,6 +2,7 @@
   --color-lightgrey: #E1E1E1;
   --color-beige: #D1CECE;
   --color-mediumgrey: #C4C4C4;
+  --color-shadow: #717171;
   --color-dark: black;
 }
 
@@ -12,8 +13,10 @@
 body {
   display: flex;
   flex-direction: column;
-  background-color: brown;
+  background-color: var(--color-lightgrey);
   height: 100%;
+  font-family: 'Bad Script',
+  cursive;
 }
 
 
@@ -21,10 +24,29 @@ body {
   display: flex;
   justify-content: space-between;
   align-self: center;
-  height: 12vh;
+  height: 20vh;
   width: 70vw;
-  
-  background-color: pink;
+  padding: 0 30px 0 30px;
+  text-transform: uppercase;
+  font-size: 1.3em;
+  letter-spacing: 4px;
+
+  background-color: var(--color-beige);
+  box-shadow: 5px 5px 10px var(--color-shadow);
+
+  margin-top: 1em;
+}
+
+.navitem,
+.navitem:link,
+.navitem:active,
+.navitem:visited {
+  color: var(--color-dark);
+  padding-left: 2rem;
+}
+
+.navitem:hover {
+
 }
 
 main {
@@ -33,12 +55,16 @@ main {
   flex-direction: column;
   align-self: center;
 
-  background-color: yellow;
+  /* background-color: yellow; */
 }
 
 .logo {
-  font-size: 4.0em;
+  display: flex;
+  align-self: center;
+  font-size: 2em;
   border-radius: 100%;
+  
+  
 }
 
 .navlist {
@@ -71,8 +97,62 @@ p {
   line-height: 1.3em;
 }
 
-.about {
+.canvas {
+  height: 400px;
+  background-color: var(--color-beige);
+  margin: 1em 0;
+  box-shadow: 5px 5px 10px var(--color-shadow);
 
+  transform: rotate(-4deg);
+}
+
+.profile-wrapper {
+  display: flex;
+  
+  justify-content: space-around;
+  align-items: center; /* not working */
+  margin-top: 20px;
+}
+
+.profile-pic {
+  
+  height: 350px;
+  width: 350px;
+
+}
+
+.profile-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 70%;
+  box-shadow: 5px 5px 10px var(--color-shadow);
+  
+  
+}
+
+.profile-quote {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  width: 350px;
+  height: 350px;
+  background-color: var(--color-mediumgrey);
+  box-shadow: 5px 5px 10px var(--color-shadow);
+}
+
+.profile-quote h5 {
+  font-size: 1.2em;
+  padding: 0;
+  margin: 0;
+}
+
+.profile-quote h3 {
+  font-size: 2.5em;
+  padding: 0;
+  margin: 0;
 }
 
 .portfolio {
@@ -115,10 +195,6 @@ footer {
 
 
 .description {
-  /* display: flex;
-  flex-direction: column;
-  align-self: center; */
-  
   
 }
 
