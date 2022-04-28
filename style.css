@@ -12,6 +12,8 @@
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -26,33 +28,37 @@ body {
   /* general config */
   font-family: 'Bad Script', cursive;
   letter-spacing: 1.5px;
+  background-color: var(--color-lightgrey);
   
 }
 
 h3 {
-  font-size: 1.5em;
+  font-size: 3em;
   letter-spacing: 1.3px;
-  padding-left: 1em;
-
 }
 
-h4 {
-  font-size: 1em;
+h5 {
+  font-size: 1.3em;
   font-weight: bold;
 }
 
 p {
   font-size: 1.2em;
   letter-spacing: 1.2px;
-  line-height: 1.3em;
+  
 }
 
 
 /* used throughout the page */
 .canvas {
+  /* config size and pos */
   height: 400px;
   background-color: var(--color-beige);
   width: 100%;
+  margin-bottom: 2em;
+
+  /* general config */
+  box-shadow: 5px 5px 10px var(--color-shadow);
 }
 
 /* Pic left, text right */
@@ -61,6 +67,8 @@ p {
 /* Text left, pic right */
 .canvas-right {}
 
+
+/* HEADER */
 #header {
   /* config size and pos */
   height: var(--nav-footer-height);
@@ -72,7 +80,7 @@ p {
 
 .header-logo {
   /* debugging */
-  background-color: lightsalmon;
+  /* background-color: lightsalmon; */
 
   /* config size and pos */
   
@@ -82,7 +90,7 @@ p {
 
 .header-nav {
   /* debugging */
-  background-color: lightgoldenrodyellow;
+  /* background-color: lightgoldenrodyellow; */
 
   /* config size and pos */
   padding: 1em;
@@ -90,7 +98,7 @@ p {
 
 .header-nav--item {
   /* debugging */
-  background-color: lightgreen;
+  /* background-color: lightgreen; */
 
   /* config size and pos */
   padding-right: 1.5em;
@@ -101,9 +109,67 @@ p {
   color: var(--color-dark)
 }
 
+
+/* MAIN */
+
+main {
+
+}
+
+/* canvas with picture and quote */
+#profile {
+  /* debugging */
+  /* background-color: lightcoral; */
+  /* config size and pos */
+  display: flex;
+  
+  justify-content: space-around;
+  align-items: center;
+}
+
+.profile-pic {
+  /* debugging */
+  /* background-color: lightgreen; */
+
+  /* config size and pos */
+  width: 300px;
+  height: 300px;
+
+  /* general config */
+  box-shadow: 5px 5px 10px var(--color-shadow);
+}
+
+.profile-pic img {
+  /* debugging */
+  /* background-color: lightblue; */
+
+  /* config size and pos */
+  width: 100%;
+  height: 100%;
+}
+
+.profile-quote {
+  /* debugging */
+  /* background-color: lightyellow; */
+
+  /* config size and pos */
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+  /* general config */
+  background-color: var(--color-mediumgrey);
+  box-shadow: 5px 5px 10px var(--color-shadow);
+}
+
+/* FOOTER */
+
 #footer {
   /* debugging */
-  background-color: cyan;
+  /* background-color: cyan; */
 }
 
 #footer {
@@ -118,7 +184,7 @@ p {
 
 .description {
   /* debugging */
-  background-color: lightcoral;
+  /* background-color: lightcoral; */
 
   /* config size and pos */
   display: flex;
@@ -129,7 +195,7 @@ p {
 
 .socials {
   /* debugging */
-  background-color: lightgreen;
+  /* background-color: lightgreen; */
 
   /* config size and pos */
   width: 120px;
@@ -141,7 +207,7 @@ p {
 
 .socials a {
   /* debugging */
-  background-color: bisque;
+  /* background-color: bisque; */
 
   /* config size and pos */
   display: inline-block;
