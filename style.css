@@ -8,6 +8,7 @@
   --color-dark: black;
   --page-width: 70vw;
   --nav-footer-height: 12vh;
+  --canvas-height: 400px;
 }
 
 * {
@@ -52,7 +53,7 @@ p {
 /* used throughout the page */
 .canvas {
   /* config size and pos */
-  height: 400px;
+  height: var(--canvas-height);
   background-color: var(--color-beige);
   width: 100%;
   margin-bottom: 2em;
@@ -172,11 +173,31 @@ main {
 /* PROJECTS: CANVAS WITH CARDS */
 
 .cards-wrapper {
+  /* debugging */
+  background-color: cyan;
+
+  /* config size and pos */
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+
 
 }
 
 .card {
+  /* debugging */
+  background-color: pink;
+  height: var(--canvas-height);
+  width: 400px;
+}
 
+.card-top {
+
+}
+
+.card-bottom {
+  
 }
 
 .card-pic {
@@ -192,7 +213,7 @@ main {
 }
 
 .card-text--subtitle {
-  
+
 }
 
 /* FOOTER */
