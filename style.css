@@ -62,10 +62,14 @@ p {
 }
 
 /* Pic left, text right */
-.canvas-left {}
+.canvas-left {
+  transform: rotate(-3deg);
+}
 
 /* Text left, pic right */
-.canvas-right {}
+.canvas-right {
+  transform: rotate(3deg);
+}
 
 
 /* HEADER */
@@ -116,7 +120,7 @@ main {
 
 }
 
-/* canvas with picture and quote */
+/* PROFILE: CANVAS WITH PICTURE AND QUOTE */
 #profile {
   /* debugging */
   /* background-color: lightcoral; */
@@ -163,6 +167,32 @@ main {
   /* general config */
   background-color: var(--color-mediumgrey);
   box-shadow: 5px 5px 10px var(--color-shadow);
+}
+
+/* PROJECTS: CANVAS WITH CARDS */
+
+.cards-wrapper {
+
+}
+
+.card {
+
+}
+
+.card-pic {
+
+}
+
+.card-text {
+
+}
+
+.card-text--title {
+
+}
+
+.card-text--subtitle {
+  
 }
 
 /* FOOTER */
