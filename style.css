@@ -24,6 +24,9 @@ body {
   min-width: 640px;
   
   /* general config */
+  font-family: 'Bad Script', cursive;
+  letter-spacing: 1.5px;
+  
 }
 
 h3 {
@@ -58,10 +61,44 @@ p {
 /* Text left, pic right */
 .canvas-right {}
 
-#nav {
+#header {
+  /* config size and pos */
   height: var(--nav-footer-height);
   display: flex;
   justify-content: space-around;
+  align-items: center;
+
+}
+
+.header-logo {
+  /* debugging */
+  background-color: lightsalmon;
+
+  /* config size and pos */
+  
+  /* general config */
+  font-size: 3em;
+}
+
+.header-nav {
+  /* debugging */
+  background-color: lightgoldenrodyellow;
+
+  /* config size and pos */
+  padding: 1em;
+}
+
+.header-nav--item {
+  /* debugging */
+  background-color: lightgreen;
+
+  /* config size and pos */
+  padding-right: 1.5em;
+
+  /* general config */
+  text-decoration: none;
+  font-size: 1.4em;
+  color: var(--color-dark)
 }
 
 #footer {
@@ -70,9 +107,13 @@ p {
 }
 
 #footer {
+  /* config size and pos */
   display: flex;
   justify-content: center;
-  height: var(--nav-footer-height)
+  height: var(--nav-footer-height);
+
+  /* general config */
+  font-size: 1.2em;
 }
 
 .description {
@@ -107,5 +148,10 @@ p {
   width: 40px;
   height: 40px;
   margin: .5em;
+}
+
+.socials img {
+  width: 100%;
+  height: 100%;
   
 }
