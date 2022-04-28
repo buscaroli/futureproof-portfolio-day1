@@ -1,3 +1,5 @@
+/* DO NOT LET THE SCREEN GO BELOW 640PX */
+
 :root {
   --color-lightgrey: #E1E1E1;
   --color-beige: #D1CECE;
@@ -17,6 +19,9 @@ body {
   height: 100%;
   font-family: 'Bad Script',
   cursive;
+  
+  margin: 0 auto;
+  
 }
 
 
@@ -24,7 +29,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-self: center;
-  height: 20vh;
+  height: 12vh;
   width: 70vw;
   padding: 0 30px 0 30px;
   text-transform: uppercase;
@@ -34,7 +39,9 @@ body {
   background-color: var(--color-beige);
   box-shadow: 5px 5px 10px var(--color-shadow);
 
-  margin-top: 1em;
+  margin: 1em 0;
+  min-width: 640px;
+  max-width: 1200px;
 }
 
 .navitem,
@@ -53,8 +60,9 @@ main {
   width: 70vw;
   display: flex;
   flex-direction: column;
-  align-self: center;
+  align-items: center;
 
+  margin: 0 auto;
   /* background-color: yellow; */
 }
 
@@ -98,26 +106,40 @@ p {
 }
 
 .canvas {
-  height: 400px;
+  height: 500px;
   background-color: var(--color-beige);
   margin: 1em 0;
   box-shadow: 5px 5px 10px var(--color-shadow);
+  width: 100%;
+  min-width: 640px;
+  max-width: 1200px;
 
-  transform: rotate(-4deg);
+  /* transform: rotate(-4deg); */
+}
+
+/* Pic left, text right */
+.canvas-left {
+
+}
+
+/* Text left, pic right */
+.canvas-right {
+
 }
 
 .profile-wrapper {
   display: flex;
   
   justify-content: space-around;
-  align-items: center; /* not working */
-  margin-top: 20px;
+  /* align-items: center;  */
+  margin-top: 60px;
 }
 
 .profile-pic {
   
+  width: 30vw;
   height: 350px;
-  width: 350px;
+  max-width: calc(350px);
 
 }
 
@@ -137,7 +159,8 @@ p {
   justify-content: space-around;
   align-items: center;
 
-  width: 350px;
+  width: 30vw;
+  max-width: calc(350px);
   height: 350px;
   background-color: var(--color-mediumgrey);
   box-shadow: 5px 5px 10px var(--color-shadow);
@@ -182,20 +205,26 @@ p {
   padding: .5em;
 }
 
-footer {
+#contacts {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-self: center;
   height: 12vh;
   width: 70vw;
-  color: var(--color-lightgrey);
+  /* color: var(--color-dark); */
   
-  background-color: black;
+  /* background-color: black; */
+  margin: 1em 0;
 }
 
 
 .description {
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 5vw;
+  font-size: 1.5em;
+  text-align: center;;
 }
 
 .social {
