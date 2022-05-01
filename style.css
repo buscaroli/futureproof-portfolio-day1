@@ -38,6 +38,11 @@ h3 {
   letter-spacing: 1.3px;
 }
 
+h4 {
+  font-size: 1.6em;
+  letter-spacing: 1.3px;
+}
+
 h5 {
   font-size: 1.3em;
   font-weight: bold;
@@ -47,6 +52,10 @@ p {
   font-size: 1.2em;
   letter-spacing: 1.2px;
   
+}
+
+a {
+  text-decoration: none;
 }
 
 
@@ -174,7 +183,7 @@ main {
 
 .cards-wrapper {
   /* debugging */
-  background-color: cyan;
+  /* background-color: cyan; */
 
   /* config size and pos */
   display: flex;
@@ -186,26 +195,53 @@ main {
 }
 
 .card {
-  /* debugging */
-  background-color: pink;
+  /* debugging
+  /* background-color: pink; */
+
+  /* config size and pos */
   height: var(--canvas-height);
   width: 400px;
+  padding: .5em;
 }
 
 .card-top {
-
+  /* config size and pos */
+  display: flex;
+  flex-direction: column;
 }
 
 .card-bottom {
-  
+  /* config size and pos */
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .card-pic {
+  /* config size and pos */
+  height: 80%;
 
+  /*  general config */
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 5px 5px 10px var(--color-shadow);
+}
+
+.card-pic > img {
+  /* config size and pos */
+  width: 100%;
+  height: 100%;
+  
+  /* general config */
+  object-fit: cover;
 }
 
 .card-text {
-
+  /* config size and pos */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 50%;
+  align-items: center;
 }
 
 .card-text--title {
@@ -218,10 +254,6 @@ main {
 
 /* FOOTER */
 
-#footer {
-  /* debugging */
-  /* background-color: cyan; */
-}
 
 #footer {
   /* config size and pos */
